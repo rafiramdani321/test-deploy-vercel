@@ -2,8 +2,8 @@ import express from "express";
 
 const subcategoryRouter = express.Router();
 
-subcategoryRouter.get("/", () => {
-  return "Sub Category Page";
+subcategoryRouter.get("/", (req, res) => {
+  res.send("Sub category Page");
 });
 
 export default subcategoryRouter;

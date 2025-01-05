@@ -10,8 +10,8 @@ dotenv.config();
 app.use(express.static("public"));
 app.use(cookieParser());
 
-app.use("/", () => {
-  return "Hello World";
+app.use("/", (req, res) => {
+  res.send("Home Page");
 });
 app.use("/api/categories", categoryRouter);
 app.use("/api/subcategory", subcategoryRouter);

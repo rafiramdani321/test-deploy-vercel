@@ -2,8 +2,8 @@ import express from "express";
 
 const categoryRouter = express.Router();
 
-categoryRouter.get("/", () => {
-  return "Category Page";
+categoryRouter.get("/", (req, res) => {
+  res.send("Category Page");
 });
 
 export default categoryRouter;
