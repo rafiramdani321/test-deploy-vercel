@@ -1,8 +1,8 @@
 import express from "express";
 import cookieParser from "cookie-parser";
 import dotenv from "dotenv";
-import { categoryRouter } from "./src/category/category.route";
-import { subcategoryRouter } from "./src/subcategory/subcategory.route";
+import { categoryRouter } from "./src/category/category.route.js";
+import { subcategoryRouter } from "./src/subcategory/subcategory.route.js";
 
 const app = express();
 dotenv.config();
